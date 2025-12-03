@@ -1,36 +1,48 @@
 <!doctype html>
-<html lang="en"><head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — Velvet Charms</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Velvet Charms</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body class="site-root">
   <header class="topbar">
     <div class="brand">Velvet Charms — Art & Gifts</div>
     <nav class="nav">
-      <a href="index.html">Home</a><a href="catalogue.html">Catalogue</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
       <a class="sister" href="https://velvet-charms-body-glow.vercel.app">Sister site: Body & Glow</a>
     </nav>
   </header>
 
   <main class="container">
     <h2>Contact</h2>
-    <p>Email: <strong>velvetcharms@example.com</strong> (replace with your real email)</p>
-    <p>Instagram / WhatsApp links: add your preferred channels.</p>
+
+    <p>Email: <strong>velvetcharms@example.com</strong></p>
+    <p>Instagram / WhatsApp links: Add your preferred channels.</p>
+
     <form id="contactForm">
       <label>Name<input name="name" required></label>
       <label>Email<input name="email" required></label>
       <label>Message<textarea name="message" required></textarea></label>
       <button type="submit" class="btn">Send message</button>
     </form>
+    
     <div id="cf-msg"></div>
   </main>
 
   <footer class="footer">© Velvet Charms</footer>
 
   <script>
-    document.getElementById('contactForm').addEventListener('submit', e=>{
+    document.getElementById('contactForm').addEventListener('submit', e => {
       e.preventDefault();
-      document.getElementById('cf-msg').textContent = 'Thanks — form sending is disabled in this demo. Add your backend or email integration.';
+      document.getElementById('cf-msg').textContent = 
+        'Thanks — form sending is disabled in this demo.';
     });
   </script>
-</body></html>
+</body>
+</html>
