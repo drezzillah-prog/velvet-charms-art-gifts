@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact — Art & Gifts</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="christmas-bg">
+  <div class="snowflakes" aria-hidden="true"></div>
+
+  <header class="header">
+    <h1>Contact Velvet Charms — Art & Gifts</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/drezzillah-prog/velvet-charms-body-glow">Sister site: Body & Glow</a>
+    </nav>
+  </header>
+
+  <main style="padding:40px;">
+    <h2>Get in touch</h2>
+    <form id="contact-form" onsubmit="prepareMessage(event)">
+      <label>Name<br><input id="cf-name" required></label><br><br>
+      <label>Email<br><input id="cf-email" type="email" required></label><br><br>
+      <label>Message<br><textarea id="cf-msg" rows="6" required></textarea></label><br><br>
+      <button class="cta-btn" type="submit">Prepare message</button>
+      <p style="margin-top:12px;font-size:0.95rem;">After preparing, copy & paste into your email client (we don't collect emails).</p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© Velvet Charms — Art & Gifts</p>
+  </footer>
+
+  <script>
+    function prepareMessage(e){ e.preventDefault();
+      const n=document.getElementById('cf-name').value.trim();
+      const em=document.getElementById('cf-email').value.trim();
+      const m=document.getElementById('cf-msg').value.trim();
+      if(!n||!em||!m){ alert('Please fill all fields'); return; }
+      const subj = encodeURIComponent('Contact from Velvet Charms website');
+      const body = encodeURIComponent(`Name: ${n}\nEmail: ${em}\n\nMessage:\n${m}`);
+      // open user's mail client
+      window.location.href = `mailto:hello@velvetcharms.example?subject=${subj}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
