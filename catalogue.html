@@ -2,35 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Catalogue — Art & Gifts</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catalogue — Velvet Charms Art & Gifts</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="christmas-bg">
-  <div class="snowflakes" aria-hidden="true"></div>
-
-  <header class="header">
-    <h1>Velvet Charms — Art & Gifts</h1>
-    <nav>
+<body class="site-root">
+  <header class="topbar">
+    <div class="brand">Velvet Charms — Art & Gifts</div>
+    <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="catalogue.html">Catalogue</a>
+      <a href="catalogue.html" class="active">Catalogue</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="https://github.com/drezzillah-prog/velvet-charms-body-glow">Sister site: Body & Glow</a>
+      <a class="sister" href="https://velvet-charms-body-glow.vercel.app">Sister site: Body & Glow</a>
     </nav>
   </header>
 
-  <main>
-    <section id="catalogue-container" class="catalogue-grid">
-      <!-- JS will inject categories & products here -->
-    </section>
+  <main class="container">
+    <h2>Catalogue</h2>
+    <div id="catalogue-root" class="catalogue-grid"></div>
   </main>
 
-  <footer>
-    <p>© Velvet Charms — Art & Gifts</p>
+  <footer class="footer">
+    <div>© Velvet Charms</div>
   </footer>
 
-  <script src="script.js"></script>
-  <script>loadCatalogue('catalogue.json');</script>
+  <script>
+    // Load the catalogue.json and build the catalogue
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('catalogue.json').then(r => r.json()).then(data => {
+        window.catalogueData = data;
+        buildCatalogue(data);
+      }).catch(err => {
+        document.getElementById('catalogue-root').innerHTML = '<p class="error">Failed to load catalogue.json — check file exists.</p>';
+        console.error(err);
+      });
+    });
+
+    function buildCatalogue(data){
+      const root = document.getElementById('catalogue-root');
+      root.innerHTML = '';
+
+      (data.categories || []).forEach(cat => {
+        const catCard = document.createElement('section');
+        catCard.className = 'cat-card';
+        const title = document.createElement('h3');
+        title.textContent = cat.name;
+        catCard.appendChild(title);
+
+        // render subcategories or products
+        if(cat.subcategories && cat.subcategories.length){
+          cat.subcategories.forEach(sub => {
+            const subTitle = document.createElement('h4');
+            subTitle.textContent = sub.name;
+            catCard.appendChild(subTitle);
+            const grid = buildProductGrid(sub.products || []);
+            catCard.appendChild(grid);
+          });
+        } else {
+          const grid = buildProductGrid(cat.products || []);
+          catCard.appendChild(grid);
+        }
+
+        root.appendChild(catCard);
+      });
+    }
+
+    function buildProductGrid(products){
+      const grid = document.createElement('div');
+      grid.className = 'products-grid';
+      products.forEach(p => {
+        const card = document.createElement('article');
+        card.className = 'product-card';
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'thumb';
+        // use the first image path exactly as in JSON
+        const img = document.createElement('img');
+        img.alt = p.name;
+        if(Array.isArray(p.images) && p.images.length) img.src = p.images[0];
+        img.onerror = function(){ this.style.display = 'none'; };
+        imgWrap.appendChild(img);
+        card.appendChild(imgWrap);
+
+        const h = document.createElement('h5'); h.textContent = p.name; card.appendChild(h);
+        const price = document.createElement('div'); price.className='price'; price.textContent = (p.price ? p.price + ' USD' : 'Contact for price'); card.appendChild(price);
+        const btn = document.createElement('a');
+        btn.className = 'btn small';
+        btn.href = 'product.html?id=' + encodeURIComponent(p.id);
+        btn.textContent = 'See details';
+        card.appendChild(btn);
+
+        grid.appendChild(card);
+      });
+      return grid;
+    }
+  </script>
 </body>
 </html>
