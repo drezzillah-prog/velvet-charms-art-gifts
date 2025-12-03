@@ -1,1 +1,227 @@
-
+{
+  "siteName": "Velvet Charms - Art & Gifts",
+  "categories": [
+    {
+      "id": "paintings",
+      "name": "Paintings & Portraits",
+      "subcategories": [
+        {
+          "id": "landscapes",
+          "name": "Landscapes",
+          "products": [
+            {
+              "id": "landscape_small",
+              "name": "Small Landscape Painting — 20×20 cm",
+              "price": 45,
+              "paymentLink": "https://www.paypal.com/ncp/payment/4XGNXNN38XE36",
+              "description": "Mini landscape — acrylic on stretched canvas.",
+              "images": ["painting_LANDSCAPE_SMALL.jpg","painting_LANDSCAPE_SMALL1.jpg"]
+            },
+            {
+              "id": "landscape_medium",
+              "name": "Medium Landscape Painting — 30×40 cm",
+              "price": 80,
+              "paymentLink": "https://www.paypal.com/ncp/payment/7EWPCAS2W98N6",
+              "description": "Medium landscape with textured brushwork.",
+              "images": ["painting_LANDSCAPE_MEDIUM.jpg","painting_LANDSCAPE_MEDIUM2.jpg","painting_LANDSCAPE_MEDIUM3.jpg"]
+            }
+          ]
+        },
+        {
+          "id": "portraits",
+          "name": "Portraits",
+          "products": [
+            {
+              "id": "portrait_2d",
+              "name": "2D Portrait — 30×40 cm",
+              "price": 120,
+              "paymentLink": "https://www.paypal.com/ncp/payment/4WZ3FGUFLZ962",
+              "description": "2D painted portrait — person or pet.",
+              "images": ["painting_portrait_1.jpg","painting_portrait_3.jpg","painting_portrait_4.jpg"]
+            },
+            {
+              "id": "portrait_3d",
+              "name": "3D Portrait Relief — 30×40 cm",
+              "price": 180,
+              "paymentLink": "https://www.paypal.com/ncp/payment/HTSJN3TULVWTN",
+              "description": "3D mixed-media portrait with sculptural texture.",
+              "images": ["clay_3d_painting_1.png","clay_3d_painting_2.png","clay_3d_painting_3.png"]
+            },
+            {
+              "id": "portrait_family",
+              "name": "Couple or Family Portrait — 40×50 cm",
+              "price": 220,
+              "paymentLink": "https://www.paypal.com/ncp/payment/NSCQQSNB7CS3W",
+              "description": "Multi-person detailed portrait.",
+              "images": ["Couple or Family Portrait.png"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epoxy_clay",
+      "name": "Epoxy & Clay Creations",
+      "subcategories": [
+        {
+          "id": "home_decor",
+          "name": "Home Decorations",
+          "products": [
+            {
+              "id": "coasters",
+              "name": "Epoxy Coasters Set (4 pcs)",
+              "price": 35,
+              "paymentLink": "https://www.paypal.com/ncp/payment/L24Y5HMDXF7FS",
+              "description": "Clear or tinted epoxy coasters.",
+              "images": ["epoxy_decorative_coaster_5.png","epoxy_decorative_coaster_6.png","epoxy_decorative_coaster_7.png"]
+            },
+            {
+              "id": "tray",
+              "name": "Epoxy Tray (12 inches)",
+              "price": 55,
+              "paymentLink": "https://www.paypal.com/ncp/payment/NGQ33EF94LDKY",
+              "description": "Decorative epoxy tray with marbled or galaxy effects.",
+              "images": ["epoxy_decorative_tray_1.png","epoxy_decorative_tray_2.png"]
+            },
+            {
+              "id": "figurine_small",
+              "name": "Decorative Figurine — Small (5 cm)",
+              "price": 30,
+              "paymentLink": "https://www.paypal.com/ncp/payment/V6ASBN7E5AC4A",
+              "description": "Small decorative figurine sculpted from clay or epoxy.",
+              "images": ["Decorative Figurine Sculpture (Epoxy or Clay) (1).png","Decorative Figurine Sculpture (Epoxy or Clay) (2).png"]
+            }
+          ]
+        },
+        {
+          "id": "epoxy_lamps",
+          "name": "Epoxy & Wood Lamps",
+          "products": [
+            {
+              "id": "epoxy_lamp_25",
+              "name": "Epoxy Lamp — 25 cm",
+              "price": 120,
+              "paymentLink": "https://www.paypal.com/ncp/payment/6P2JZHR7RGYJ6",
+              "description": "Epoxy lamp with glowing core and replaceable bulb.",
+              "images": ["Epoxy Lamp (1).png","Epoxy Lamp (2).png","Epoxy Lamp (3).png"]
+            }
+          ]
+        },
+        {
+          "id": "keychains",
+          "name": "Keychains & Jewelry",
+          "products": [
+            {
+              "id": "epoxy_keychains",
+              "name": "Custom Epoxy & Clay Keychains",
+              "price": 18,
+              "paymentLink": "https://www.paypal.com/ncp/payment/TF7H4CJV7SAJ6",
+              "description": "Handmade epoxy or clay keychains — Christmas, floral, or custom themes.",
+              "images": ["clay_christmas_keychain_1.png","clay_christmas_keychain_2.png","clay_christmas_keychain_3.png"]
+            },
+            {
+              "id": "epoxy_pendant",
+              "name": "Epoxy Resin Pendant",
+              "price": 28,
+              "paymentLink": "https://www.paypal.com/ncp/payment/BE5H4J3F8GYKA",
+              "description": "Hand-poured epoxy pendants with flowers or glitter.",
+              "images": ["epoxy_pendant.png","epoxy_pendant_1.png"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mugs_bags",
+      "name": "Mugs, Leather Bags & Clocks",
+      "subcategories": [
+        {
+          "id": "mugs",
+          "name": "Mugs",
+          "products": [
+            {
+              "id": "clay_mug_800",
+              "name": "Clay Mug (800 ml)",
+              "price": 40,
+              "paymentLink": "https://www.paypal.com/ncp/payment/VENPN7AHXJFE4",
+              "description": "Handmade, painted, food-safe mug.",
+              "images": ["Clay Mugs (1).png","Clay Mugs (2).png","Clay Mugs (3).png"]
+            }
+          ]
+        },
+        {
+          "id": "leather_bags",
+          "name": "Leather Bags",
+          "products": [
+            {
+              "id": "leather_bag_small",
+              "name": "Leather Bag — Small",
+              "price": 110,
+              "paymentLink": "https://www.paypal.com/ncp/payment/WKWH7WQA7EG4C",
+              "description": "Small handcrafted leather bag with adjustable strap.",
+              "images": ["Leather Bag Small.png"]
+            },
+            {
+              "id": "leather_bag_medium",
+              "name": "Leather Bag — Medium",
+              "price": 160,
+              "paymentLink": "https://www.paypal.com/ncp/payment/N52D2YXD5ZZVG",
+              "description": "Medium leather bag — perfect for daily use.",
+              "images": ["Leather Bag Medium.png"]
+            },
+            {
+              "id": "leather_bag_large",
+              "name": "Leather Bag — Large",
+              "price": 210,
+              "paymentLink": "https://www.paypal.com/ncp/payment/AXRQFZ2QJ6Z5N",
+              "description": "Large elegant leather bag with reinforced stitching.",
+              "images": ["Leather Bag Large.png"]
+            }
+          ]
+        },
+        {
+          "id": "wall_clocks",
+          "name": "Wall Clocks",
+          "products": [
+            {
+              "id": "wall_clock_1",
+              "name": "Wall Clock — Large",
+              "price": 120,
+              "paymentLink": "https://www.paypal.com/ncp/payment/MHMAH79G78N8Y",
+              "description": "Large epoxy-and-wood wall clock with metal hands.",
+              "images": ["Wall Clocks.png","Wall Clocks (2).png","Wall Clocks (3).png"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id":"bundles",
+      "name":"Bundles & Sets",
+      "subcategories":[
+        {
+          "id":"bundles_main",
+          "name":"Bundles",
+          "products":[
+            {
+              "id":"home_harmony",
+              "name":"Home Harmony Box",
+              "price":100,
+              "paymentLink":"https://www.paypal.com/ncp/payment/9T3C2WRAXJJYN",
+              "description":"Epoxy decor + wax candle + seasonal soap.",
+              "images":["epoxy_decorative_tray_1.png"]
+            },
+            {
+              "id":"cozy_winter",
+              "name":"Cozy Winter Set",
+              "price":140,
+              "paymentLink":"https://www.paypal.com/ncp/payment/8A3AKAZR6QVEL",
+              "description":"Beanie + scarf + mittens + small candle bundle.",
+              "images":["CozyWinterSet.png"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
