@@ -283,7 +283,11 @@
               "price": 130,
               "paymentLink": "https://www.paypal.com/ncp/payment/QYE3TFJQ34P3J",
               "description": "Festive-themed 2D portrait with holiday magic.",
-              "images": ["Holiday-Themed Portrait (2D).jpg","painting_christmas_1.jpg","painting_christmas_3.jpg"]
+              "images": [
+                "Holiday-Themed Portrait (2D).jpg",
+                "painting_christmas_1.jpg",
+                "painting_christmas_3.jpg"
+              ]
             },
             {
               "id": "holiday_3d",
@@ -410,7 +414,7 @@
         {
           "id": "hair_combs",
           "name": "Decorative Hair Combs",
-          "price": 25,
+              "price": 25,
           "paymentLink": "https://www.paypal.com/ncp/payment/LVNL7VJRTEKDQ",
           "description": "Handmade decorative combs crafted with resin, pearlescent touches, or mixed media.",
           "images": [
@@ -431,7 +435,10 @@
           "price": 140,
           "paymentLink": "https://www.paypal.com/ncp/payment/8A3AKAZR6QVEL",
           "description": "Beanie + scarf + mittens + small candle bundle.",
-          "images": ["CozyWinterSet.png","Knitted and braided products/Matching Winter Set - Beanie + Scarf + Mittens.png"]
+          "images": [
+            "CozyWinterSet.png",
+            "Knitted and braided products/Matching Winter Set - Beanie + Scarf + Mittens.png"
+          ]
         },
         {
           "id": "home_harmony",
@@ -439,7 +446,10 @@
           "price": 100,
           "paymentLink": "https://www.paypal.com/ncp/payment/9T3C2WRAXJJYN",
           "description": "Epoxy decor + wax candle + seasonal soap.",
-          "images": ["epoxy_decorative_tray_1.png","epoxy_decorative_tray_2.png"]
+          "images": [
+            "epoxy_decorative_tray_1.png",
+            "epoxy_decorative_tray_2.png"
+          ]
         }
       ]
     }
