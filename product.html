@@ -1,34 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Product — Art & Gifts</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Product — Velvet Charms</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="christmas-bg">
-  <div class="snowflakes" aria-hidden="true"></div>
-
-  <header class="header">
-    <h1>Velvet Charms — Product</h1>
-    <nav>
+<body class="site-root">
+  <header class="topbar">
+    <div class="brand">Velvet Charms — Art & Gifts</div>
+    <nav class="nav">
       <a href="index.html">Home</a>
       <a href="catalogue.html">Catalogue</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="https://github.com/drezzillah-prog/velvet-charms-body-glow">Sister site: Body & Glow</a>
+      <a class="sister" href="https://velvet-charms-body-glow.vercel.app">Sister site: Body & Glow</a>
     </nav>
   </header>
 
-  <main class="product-page">
-    <div id="product-container"></div>
+  <main class="container product-page">
+    <div id="product-root"></div>
   </main>
 
-  <footer>
-    <p>© Velvet Charms — Art & Gifts</p>
-  </footer>
+  <footer class="footer">© Velvet Charms</footer>
+  <script>
+    function getQuery(name){ const u = new URLSearchParams(location.search); return u.get(name); }
+    function findProductById(data, id){
+      if(!data) return null;
+      for(const cat of (data.categories||[])){
+        if(cat.products){
+          for(const p of cat.products) if(p.id===id) return p;
+        }
+        if(cat.subcategories){
+          for(const sub of cat.subcategories){
+            for(const p of (sub.products||[])) if(p.id===id) return p;
+          }
+        }
+      }
+      return null;
+    }
+    fetch('catalogue.json').then(r => r.json()).then(data => {
+      const id = getQuery('id');
+      const product = findProductById(data,id);
+      const root = document.getElementById('product-root');
+      if(!product){ root.innerHTML = '<p class="error">Product not found.</p>'; return; }
+      const html = [];
+      html.push('<div class="product-detail">');
+      html.push('<h2>'+escapeHtml(product.name)+'</h2>');
+      if(product.images && product.images.length){
+        html.push('<div class="gallery">');
+        product.images.forEach(img => {
+          // use image path exactly as provided
+          html.push('<img src="'+img+'" onerror="this.style.display=\\'none\\'" alt="'+escapeHtml(product.name)+'">');
+        });
+        html.push('</div>');
+      }
+      html.push('<div class="prod-meta">');
+      html.push('<p class="price">'+(product.price ? product.price + ' USD' : 'Contact for price')+'</p>');
+      html.push('<p class="desc">'+escapeHtml(product.description || '')+'</p>');
+      if(product.paymentLink){
+        html.push('<p><a class="btn buy" href="'+product.paymentLink+'" target="_blank" rel="noopener">Buy with PayPal</a></p>');
+      }
+      html.push('</div></div>');
+      root.innerHTML = html.join('');
+    }).catch(e => { document.getElementById('product-root').innerHTML = '<p class="error">Failed to load product.</p>'; console.error(e); });
 
-  <script src="script.js"></script>
-  <script>loadProduct('catalogue.json');</script>
+    function escapeHtml(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  </script>
 </body>
 </html>
