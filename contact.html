@@ -7,31 +7,18 @@
   <header class="topbar">
     <div class="brand">Velvet Charms — Art & Gifts</div>
     <nav class="nav">
-      <a href="index.html">Home</a><a href="catalogue.html">Catalogue</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
-      <a class="sister" href="https://velvet-charms-body-glow.vercel.app">Sister site: Body & Glow</a>
+      <a href="index.html">Home</a><a href="catalogue.html">Catalogue</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a class="sister" href="https://velvet-charms-body-glow.vercel.app" target="_blank" rel="noopener">Sister site: Body & Glow</a>
     </nav>
   </header>
 
   <main class="container">
     <h2>Contact</h2>
-    <p>Email: <strong>velvetcharms@example.com</strong> (replace with your real email)</p>
-    <p>Instagram / WhatsApp: add your preferred channels.</p>
-
-    <form id="contactForm">
-      <label>Name<input name="name" required></label>
-      <label>Email<input name="email" required></label>
-      <label>Message<textarea name="message" required></textarea></label>
-      <button type="submit" class="btn">Send message</button>
-    </form>
-    <div id="cf-msg"></div>
+    <p>Email: <a href="mailto:velvetcharmsofficial@example.com">velvetcharmsofficial@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></p>
+    <p>For custom uploads and large commissions, message us on Instagram and we’ll give you an upload link.</p>
   </main>
 
-  <footer class="footer">© Velvet Charms</footer>
-
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', e=>{
-      e.preventDefault();
-      document.getElementById('cf-msg').textContent = 'Thanks — form sending is disabled in this demo. Add your backend or email integration.';
-    });
-  </script>
+  <footer class="footer">© Velvet Charms — Art & Gifts</footer>
+  <script src="script.js"></script>
 </body></html>
