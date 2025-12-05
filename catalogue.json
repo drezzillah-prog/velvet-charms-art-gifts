@@ -1,83 +1,84 @@
 {
-  "site": "Velvet Charms — Art & Gifts",
-  "theme": "christmas",
+  "site": "art-gifts",
   "categories": [
     {
-      "id": "paintings_portraits",
+      "id": "paintings",
       "name": "Paintings & Portraits",
       "subcategories": [
-        { "id": "landscapes", "name": "Landscapes", "products": [
-          {"id":"landscape_small","name":"Small Landscape Painting — 20×20 cm","price":45,"paymentLink":"https://www.paypal.com/ncp/payment/4XGNXNN38XE36","description":"Mini landscape — acrylic on stretched canvas.","images":["painting_LANDSCAPE_SMALL.jpg","painting_LANDSCAPE_SMALL1.jpg"]},
-          {"id":"landscape_medium","name":"Medium Landscape Painting — 30×40 cm","price":80,"paymentLink":"https://www.paypal.com/ncp/payment/7EWPCAS2W98N6","description":"Medium landscape with textured brushwork.","images":["painting_LANDSCAPE_MEDIUM.jpg","painting_LANDSCAPE_MEDIUM2.jpg","painting_LANDSCAPE_MEDIUM3.jpg"]},
-          {"id":"landscape_large","name":"Large Landscape Painting — 50×70 cm","price":140,"paymentLink":"https://www.paypal.com/ncp/payment/7K7G2HWWE74D2","description":"Large statement landscape painting.","images":["Large Landscape Painting.jpg","Large Landscape Painting1.jpg","Large Landscape Painting2.jpg"]}
-        ]},
-        { "id":"portraits","name":"Portraits & Festive Portraits","products":[
-          {"id":"portrait_2d","name":"2D Portrait — 30×40 cm","price":120,"paymentLink":"https://www.paypal.com/ncp/payment/4WZ3FGUFLZ962","description":"2D painted portrait — person or pet.","images":["painting_portrait_1.jpg","painting_portrait_3.jpg","painting_portrait_4.jpg"]},
-          {"id":"portrait_3d","name":"3D Portrait Relief — 30×40 cm","price":180,"paymentLink":"https://www.paypal.com/ncp/payment/HTSJN3TULVWTN","description":"3D mixed-media portrait with sculptural texture.","images":["clay_3d_painting_1.png","clay_3d_painting_2.png","clay_3d_painting_3.png"]},
-          {"id":"portrait_family","name":"Couple or Family Portrait — 40×50 cm","price":220,"paymentLink":"https://www.paypal.com/ncp/payment/NSCQQSNB7CS3W","description":"Multi-person detailed portrait.","images":["Couple or Family Portrait.png"]},
-          {"id":"portrait_mini","name":"Mini Portrait Ornament — 10×10 cm","price":50,"paymentLink":"https://www.paypal.com/ncp/payment/QUMD499D3YGDS","description":"Small hand-painted ornament keepsake.","images":["Mini Portrait Ornament.jpg"]},
-          {"id":"holiday_2d","name":"Holiday-Themed Portrait (2D) — 30×40 cm","price":130,"paymentLink":"https://www.paypal.com/ncp/payment/QYE3TFJQ34P3J","description":"Festive-themed 2D portrait.","images":["painting_christmas_1.jpg","painting_christmas_3.jpg"]},
-          {"id":"holiday_3d","name":"3D Festive Portrait Relief — 30×40 cm","price":190,"paymentLink":"https://www.paypal.com/ncp/payment/J3YMRLPT6CYYE","description":"Sculpted and painted festive portrait.","images":["3D Festive Portrait Relief.png"]}
-        ]}
+        {
+          "id": "landscapes",
+          "name": "Landscapes",
+          "products": [
+            {"id":"landscape_small","name":"Small Landscape Painting — 20×20 cm","price":45,"paymentLink":"https://www.paypal.com/ncp/payment/4XGNXNN38XE36","description":"Mini landscape — acrylic on stretched canvas.","images":["painting_LANDSCAPE_SMALL.jpg","painting_LANDSCAPE_SMALL1.jpg"]},
+            {"id":"landscape_medium","name":"Medium Landscape Painting — 30×40 cm","price":80,"paymentLink":"https://www.paypal.com/ncp/payment/7EWPCAS2W98N6","description":"Medium landscape with textured brushwork.","images":["painting_LANDSCAPE_MEDIUM.jpg","painting_LANDSCAPE_MEDIUM2.jpg","painting_LANDSCAPE_MEDIUM3.jpg"]},
+            {"id":"landscape_large","name":"Large Landscape Painting — 50×70 cm","price":140,"paymentLink":"https://www.paypal.com/ncp/payment/7K7G2HWWE74D2","description":"Large statement landscape painting.","images":["Large Landscape Painting.jpg","Large Landscape Painting1.jpg","Large Landscape Painting2.jpg"]}
+          ]
+        },
+        {"id":"landscape_custom","name":"Custom Landscape Commission","products":[{"id":"landscape_commission","name":"Custom Landscape Commission","price":250,"paymentLink":"https://www.paypal.com/ncp/payment/UTK2B86NFZMDN","description":"Custom landscape based on your photo or theme.","images":["Custom Landscape Commission.jpg"]}]},
+        {
+          "id":"portraits",
+          "name":"Portraits",
+          "products":[
+            {"id":"portrait_2d","name":"2D Portrait — 30×40 cm","price":120,"paymentLink":"https://www.paypal.com/ncp/payment/4WZ3FGUFLZ962","description":"2D painted portrait — person or pet.","images":["painting_portrait_1.jpg","painting_portrait_3.jpg","painting_portrait_4.jpg"]},
+            {"id":"portrait_3d","name":"3D Portrait Relief — 30×40 cm","price":180,"paymentLink":"https://www.paypal.com/ncp/payment/HTSJN3TULVWTN","description":"3D mixed-media portrait with sculptural texture.","images":["clay_3d_painting_1.png","clay_3d_painting_2.png","clay_3d_painting_3.png"]},
+            {"id":"portrait_family","name":"Couple or Family Portrait — 40×50 cm","price":220,"paymentLink":"https://www.paypal.com/ncp/payment/NSCQQSNB7CS3W","description":"Multi-person detailed portrait.","images":["Couple or Family Portrait.png"]},
+            {"id":"portrait_mini","name":"Mini Portrait Ornament — 10×10 cm","price":50,"paymentLink":"https://www.paypal.com/ncp/payment/QUMD499D3YGDS","description":"Small hand-painted ornament keepsake.","images":["Mini Portrait Ornament.jpg"]},
+            {"id":"holiday_2d","name":"Holiday-Themed Portrait (2D) — 30×40 cm","price":130,"paymentLink":"https://www.paypal.com/ncp/payment/QYE3TFJQ34P3J","description":"Festive-themed 2D portrait.","images":["painting_christmas_1.jpg","painting_christmas_3.jpg"]},
+            {"id":"holiday_3d","name":"3D Festive Portrait Relief — 30×40 cm","price":190,"paymentLink":"https://www.paypal.com/ncp/payment/J3YMRLPT6CYYE","description":"Sculpted and painted festive portrait.","images":["3D Festive Portrait Relief.png"]}
+          ]
+        }
       ]
     },
-
     {
-      "id": "epoxy_clay_decor",
-      "name": "Epoxy & Clay Creations",
+      "id":"epoxy_clay",
+      "name":"Epoxy & Clay Creations",
       "subcategories":[
-        {"id":"home_decor","name":"Home Decorations","products":[
-          {"id":"coasters","name":"Epoxy Coasters Set (4 pcs)","price":35,"paymentLink":"https://www.paypal.com/ncp/payment/L24Y5HMDXF7FS","description":"Clear or tinted epoxy coasters with floral or metallic inclusions.","images":["epoxy_decorative_coaster_5.png","epoxy_decorative_coaster_6.png","epoxy_decorative_coaster_7.png","epoxy_decorative_coaster_8.png"]},
-          {"id":"tray","name":"Epoxy Tray (12 inches)","price":55,"paymentLink":"https://www.paypal.com/ncp/payment/NGQ33EF94LDKY","description":"Decorative epoxy tray with marbled or galaxy effects.","images":["epoxy_decorative_tray_1.png","epoxy_decorative_tray_2.png","epoxy_decorative_tray_3.png","epoxy_decorative_tray_4.png"]},
-          {"id":"figurine_small","name":"Decorative Figurine — Small (5 cm)","price":30,"paymentLink":"https://www.paypal.com/ncp/payment/V6ASBN7E5AC4A","description":"Small decorative figurine sculpted from clay or epoxy.","images":["Decorative Figurine Sculpture (Epoxy or Clay) (1).png","Decorative Figurine Sculpture (Epoxy or Clay) (2).png"]},
-          {"id":"figurine_medium","name":"Decorative Figurine — Medium (12 cm)","price":50,"paymentLink":"https://www.paypal.com/ncp/payment/R29A37JV44YC2","description":"Medium epoxy/clay figurine with detailed finish.","images":["Decorative Figurine Sculpture (Epoxy or Clay) (10).png","Decorative Figurine Sculpture (Epoxy or Clay) (11).png","Decorative Figurine Sculpture (Epoxy or Clay) (12).png"]},
-          {"id":"figurine_large","name":"Decorative Figurine — Large (20 cm)","price":80,"paymentLink":"https://www.paypal.com/ncp/payment/RGQ85J5B9X77Y","description":"Large handcrafted figurine — custom colors available.","images":["Decorative Figurine Sculpture (Epoxy or Clay) (20).png","Decorative Figurine Sculpture (Epoxy or Clay) (21).png","Decorative Figurine Sculpture (Epoxy or Clay) (22).png"]}
-        ]},
-        {"id":"epoxy_lamp","name":"Epoxy Lamps","products":[
-          {"id":"epoxy_lamp_25","name":"Epoxy Lamp — 25 cm","price":120,"paymentLink":"https://www.paypal.com/ncp/payment/6P2JZHR7RGYJ6","description":"Epoxy lamp with glowing core and replaceable bulb.","images":["Epoxy Lamp (1).png","Epoxy Lamp (2).png","Epoxy Lamp (3).png","Epoxy Lamp (4).png","Epoxy Lamp (5).png","Epoxy Lamp (6).png","Epoxy Lamp (7).png","Epoxy Lamp (8).png","Epoxy Lamp (9).png"]}
-        ]},
-        {"id":"candle_holders","name":"Candle Holders","products":[
-          {"id":"holder","name":"Epoxy Candle Holders — Set","price":45,"paymentLink":"https://www.paypal.com/ncp/payment/L24Y5HMDXF7FS","description":"Handcrafted epoxy candle holders with floral and crystal inclusions.","images":["candle_holder_24.png","candle_holder_25.png","candle_holder_27.png","candle_holder_28.png"]}
-        ]},
-        {"id":"keychains","name":"Keychains & Small Gifts","products":[
-          {"id":"keychains","name":"Custom Epoxy & Clay Keychains","price":18,"paymentLink":"https://www.paypal.com/ncp/payment/TF7H4CJV7SAJ6","description":"Handmade epoxy or clay keychains — Christmas, floral, or custom themes.","images":["clay_christmas_keychain_1.png","clay_christmas_keychain_2.png","clay_christmas_keychain_3.png","clay_christmas_necklace_3.png"]}
-        ]},
+        {
+          "id":"home_decor",
+          "name":"Home Decorations",
+          "products":[
+            {"id":"coasters","name":"Epoxy Coasters Set (4 pcs)","price":35,"paymentLink":"https://www.paypal.com/ncp/payment/L24Y5HMDXF7FS","description":"Clear or tinted epoxy coasters with floral or metallic inclusions.","images":["epoxy_decorative_coaster_5.png","epoxy_decorative_coaster_6.png","epoxy_decorative_coaster_7.png","epoxy_decorative_coaster_8.png"]},
+            {"id":"tray","name":"Epoxy Tray (12 inches)","price":55,"paymentLink":"https://www.paypal.com/ncp/payment/NGQ33EF94LDKY","description":"Decorative epoxy tray with marbled or galaxy effects.","images":["epoxy_decorative_tray_1.png","epoxy_decorative_tray_2.png","epoxy_decorative_tray_3.png","epoxy_decorative_tray_4.png"]},
+            {"id":"figurine_small","name":"Decorative Figurine — Small (5 cm)","price":30,"paymentLink":"https://www.paypal.com/ncp/payment/V6ASBN7E5AC4A","description":"Small decorative figurine sculpted from clay or epoxy.","images":["clay_christmas_11.png","clay_christmas_26.png","clay_christmas_17.png"]},
+            {"id":"figurine_medium","name":"Decorative Figurine — Medium (12 cm)","price":50,"paymentLink":"https://www.paypal.com/ncp/payment/R29A37JV44YC2","description":"Medium epoxy/clay figurine with detailed finish.","images":["Clay_epoxy_christmas_globe_1.png","Clay_epoxy_christmas_globe_3.png","clay_christmas_21.png"]},
+            {"id":"figurine_large","name":"Decorative Figurine — Large (20 cm)","price":80,"paymentLink":"https://www.paypal.com/ncp/payment/RGQ85J5B9X77Y","description":"Large handcrafted figurine — custom colors available.","images":["clay_christmas_14.png","clay_christmas_18.png","clay_christmas_27.png"]}
+          ]
+        },
+        {"id":"epoxy_lamp","name":"Epoxy Lamp — 25 cm","products":[{"id":"epoxy_lamp_25","name":"Epoxy Lamp — 25 cm","price":120,"paymentLink":"https://www.paypal.com/ncp/payment/6P2JZHR7RGYJ6","description":"Epoxy lamp with glowing core and replaceable bulb.","images":["Epoxy Lamp (1).png","Epoxy Lamp (2).png","Epoxy Lamp (3).png","Epoxy Lamp (4).png","Epoxy Lamp (5).png","Epoxy Lamp (6).png","Epoxy Lamp (7).png","Epoxy Lamp (8).png","Epoxy Lamp (9).png"]}]},
+        {"id":"candle_holders","name":"Epoxy Candle Holders","products":[{"id":"holder","name":"Epoxy Candle Holders — Set","price":45,"paymentLink":"https://www.paypal.com/ncp/payment/L24Y5HMDXF7FS","description":"Handcrafted epoxy candle holders with floral and crystal inclusions.","images":["candle_holder_24.png","candle_holder_25.png","candle_holder_27.png","candle_holder_28.png"]}]},
+        {"id":"keychains","name":"Epoxy & Clay Keychains","products":[{"id":"keychains","name":"Custom Epoxy & Clay Keychains","price":18,"paymentLink":"https://www.paypal.com/ncp/payment/TF7H4CJV7SAJ6","description":"Handmade epoxy or clay keychains — Christmas, floral, or custom themes.","images":["clay_christmas_keychain_1.png","clay_christmas_keychain_2.png","clay_christmas_keychain_3.png","clay_christmas_necklace_1.png"]}]},
         {"id":"jewelry","name":"Epoxy Jewelry","products":[
           {"id":"epoxy_pendant","name":"Epoxy Resin Pendant","price":28,"paymentLink":"https://www.paypal.com/ncp/payment/BE5H4J3F8GYKA","description":"Hand-poured epoxy pendants with flowers or glitter.","images":["epoxy_pendant.png","epoxy_pendant_1.png","epoxy_pendant_2.png","epoxy_pendant_3.png"]},
           {"id":"epoxy_earrings","name":"Epoxy Earrings — Pair","price":25,"paymentLink":"https://www.paypal.com/ncp/payment/TF7H4CJV7SAJ6","description":"Lightweight epoxy earrings with hypoallergenic hooks.","images":["epoxy_earings_1.png","epoxy_earings_2.png","epoxy_earings_3.png","epoxy_earings_4.png","epoxy_earings_5.png","epoxy_earings_6.png"]},
           {"id":"epoxy_ring","name":"Epoxy Ring — Adjustable","price":22,"paymentLink":"https://www.paypal.com/ncp/payment/UUU7DUFZB36JS","description":"Transparent or tinted adjustable epoxy ring.","images":["epoxy_ring_1.png","epoxy_ring_2.png","epoxy_ring_3.png","epoxy_ring_4.png","epoxy_ring_5.png"]}
         ]},
-        {"id":"epoxy_box","name":"Epoxy & Wood Jewelry Box","products":[
-          {"id":"epoxy_box","name":"Epoxy & Wood Jewelry Box","price":60,"paymentLink":"https://www.paypal.com/ncp/payment/7YPZZ34FGZ6YQ","description":"Wooden jewelry box with epoxy lid.","images":["Epoxy + Wood Jewelry Box (1).png","Epoxy + Wood Jewelry Box (2).png","Epoxy + Wood Jewelry Box (3).png"]}
-        ]}
+        {"id":"epoxy_box","name":"Epoxy & Wood Jewelry Box","products":[{"id":"epoxy_box_wood","name":"Epoxy & Wood Jewelry Box","price":60,"paymentLink":"https://www.paypal.com/ncp/payment/7YPZZ34FGZ6YQ","description":"Wooden jewelry box with epoxy lid.","images":["Epoxy + Wood Jewelry Box (1).png","Epoxy + Wood Jewelry Box (2).png","Epoxy + Wood Jewelry Box (3).png"]}]},
+        {"id":"phone_cases","name":"Phone Cases","products":[{"id":"epoxy_case","name":"Custom Epoxy Case","price":60,"paymentLink":"https://www.paypal.com/ncp/payment/795JLUEF6R5SC","description":"Custom epoxy phone case with embedded flowers or designs.","images":["PersonalizedCase (1).png","PersonalizedCase (2).png","PersonalizedCase (3).png","PersonalizedCase (4).png","PersonalizedCase (5).png","PersonalizedCase (6).png","PersonalizedCase (7).png","PersonalizedCase (8).png","PersonalizedCase (9).png","PersonalizedCase (10).png","PersonalizedCase (11).png","PersonalizedCase (12).png","PersonalizedCase (13).png","PersonalizedCase (14).png","PersonalizedCase (15).png","PersonalizedCase (16).png","PersonalizedCase (17).png","PersonalizedCase (18).png"]}]}
       ]
     },
-
     {
       "id":"leather_bags",
       "name":"Leather Bags",
       "products":[
-        {"id":"leather_bag_small","name":"Leather Bag — Small","price":110,"paymentLink":"https://www.paypal.com/ncp/payment/WKWH7WQA7EG4C","description":"Small handcrafted leather bag with adjustable strap. Durable, minimalist design.","images":["Leather Bag Small.png"]},
+        {"id":"leather_bag_small","name":"Leather Bag — Small","price":110,"paymentLink":"https://www.paypal.com/ncp/payment/WKWH7WQA7EG4C","description":"Small handcrafted leather bag with adjustable strap.","images":["Leather Bag Small.png"]},
         {"id":"leather_bag_medium","name":"Leather Bag — Medium","price":160,"paymentLink":"https://www.paypal.com/ncp/payment/N52D2YXD5ZZVG","description":"Medium leather bag — perfect for daily use.","images":["Leather Bag Medium.png"]},
-        {"id":"leather_bag_large","name":"Leather Bag — Large","price":210,"paymentLink":"https://www.paypal.com/ncp/payment/AXRQFZ2QJ6Z5N","description":"Large elegant leather bag with reinforced stitching.","images":["Leather Bag Large.png"]}
+        {"id":"leather_bag_large","name":"Leather Bag — Large","price":210,"paymentLink":"https://www.paypal.com/ncp/payment/AXRQF2QJ6Z5N","description":"Large elegant leather bag with reinforced stitching.","images":["Leather Bag Large.png"]}
       ]
     },
-
     {
-      "id":"wall_clocks",
+      "id":"wallclocks",
       "name":"Wall Clocks",
       "products":[
         {"id":"wall_clock_1","name":"Wall Clock — Large","price":120,"paymentLink":"https://www.paypal.com/ncp/payment/MHMAH79G78N8Y","description":"Large epoxy-and-wood wall clock with metal hands.","images":["Wall Clocks.png","Wall Clocks (2).png","Wall Clocks (3).png"]}
       ]
     },
-
     {
       "id":"bundles",
-      "name":"Bundles & Sets",
+      "name":"Bundles",
       "products":[
+        {"id":"relax_restore","name":"Relax & Restore Set","price":65,"paymentLink":"https://www.paypal.com/ncp/payment/X7EA4LJC8VQ3A","description":"Herbal soap + face cream + small wax candle.","images":["Herbal soap + face cream + small wax candle.png"]},
         {"id":"cozy_winter","name":"Cozy Winter Set","price":140,"paymentLink":"https://www.paypal.com/ncp/payment/8A3AKAZR6QVEL","description":"Beanie + scarf + mittens + small candle bundle.","images":["Cozy Winter Set.png"]},
-        {"id":"home_harmony","name":"Home Harmony Box","price":100,"paymentLink":"https://www.paypal.com/ncp/payment/9T3C2WRAXJJYN","description":"Epoxy decor + wax candle + seasonal soap.","images":["epoxy_decorative_tray_1.png","epoxy_decorative_tray_2.png"]},
-        {"id":"relax_restore","name":"Relax & Restore Set","price":65,"paymentLink":"https://www.paypal.com/ncp/payment/X7EA4LJC8VQ3A","description":"Herbal soap + face cream + small wax candle.","images":["Herbal soap + face cream + small wax candle.png"]}
+        {"id":"home_harmony","name":"Home Harmony Box","price":100,"paymentLink":"https://www.paypal.com/ncp/payment/9T3C2WRAXJJYN","description":"Epoxy decor + wax candle + seasonal soap.","images":["homeharmonybox.png","epoxy_decorative_tray_1.png"]}
       ]
     }
   ]
