@@ -1,24 +1,41 @@
 <!doctype html>
-<html lang="en"><head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — Velvet Charms</title>
-  <link rel="stylesheet" href="style.css"/>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Velvet Charms</title>
+<link rel="stylesheet" href="./style.css">
 </head>
-<body class="site-root">
-  <header class="topbar">
-    <div class="brand">Velvet Charms — Art & Gifts</div>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="catalogue.html">Catalogue</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-      <a class="sister" href="https://velvet-charms-body-glow.vercel.app" target="_blank" rel="noopener">Sister site: Body & Glow</a>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">Velvet Charms</h1>
+    <nav class="main-nav">
+      <a href="./index.html">Home</a>
+      <a href="./catalogue.html">Catalogue</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:velvetcharmsofficial@example.com">velvetcharmsofficial@example.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></p>
-    <p>For custom uploads and large commissions, message us on Instagram and we’ll give you an upload link.</p>
-  </main>
+<main class="container">
+  <h2>Contact</h2>
+  <p>Have questions or want a commission? Use Instagram or email us at <strong>velvetcharmsstudio@example.com</strong> (replace with your real address) or use this contact form:</p>
 
-  <footer class="footer">© Velvet Charms — Art & Gifts</footer>
-  <script src="script.js"></script>
-</body></html>
+  <form action="mailto:velvetcharmsstudio@example.com" method="post" enctype="text/plain">
+    <label>Name<br><input name="name" /></label><br>
+    <label>Email<br><input name="email" type="email" /></label><br>
+    <label>Message<br><textarea name="message"></textarea></label><br>
+    <input class="btn" type="submit" value="Send" />
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© Velvet Charms — handmade with care</p>
+  </div>
+</footer>
+
+</body>
+</html>
